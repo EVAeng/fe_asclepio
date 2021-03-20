@@ -1,0 +1,93 @@
+{
+  "name": "@bit/evaeng.baseui.main-search-bar",
+  "version": "1.0.0",
+  "homepage": "https://bit.dev/evaeng/baseui/main-search-bar",
+  "main": "dist/MainSearchBar.js",
+  "componentId": {
+    "scope": "evaeng.baseui",
+    "name": "main-search-bar",
+    "version": "1.0.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "react": "^17.0.1",
+    "@types/react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/react-typescript@4.0.0": {
+          "rawConfig": {
+            "compilerPath": "typescript/bin/tsc",
+            "compilerArguments": [
+              "--declaration"
+            ],
+            "compiledFileTypes": [
+              ".ts",
+              ".tsx"
+            ],
+            "configFileName": "tsconfig.json",
+            "tsconfig": {
+              "compilerOptions": {
+                "outDir": "dist",
+                "target": "ES2015",
+                "sourceMap": false,
+                "moduleResolution": "Node",
+                "esModuleInterop": true,
+                "module": "ES6",
+                "allowSyntheticDefaultImports": true,
+                "resolveJsonModule": true,
+                "declaration": true,
+                "experimentalDecorators": true,
+                "inlineSourceMap": false,
+                "inlineSources": false,
+                "lib": [
+                  "dom",
+                  "es2015"
+                ],
+                "jsx": "react-jsx",
+                "rootDir": "./",
+                "removeComments": true,
+                "typeRoots": [
+                  "./node_modules/@types"
+                ],
+                "importHelpers": false
+              },
+              "include": [
+                "./**/*"
+              ],
+              "exclude": [
+                "node_modules",
+                ".dependencies",
+                "dist"
+              ]
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            }
+          },
+          "options": {}
+        }
+      }
+    },
+    "resolveAliases": {
+      "commons/MainSearchBar/MainSearchBar.css": "@bit/evaeng.baseui.main-search-bar/MainSearchBar.css"
+    }
+  }
+}
