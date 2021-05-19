@@ -15,8 +15,10 @@ export default function Nav() {
                 <Link to='/'>
                     <img
                         className="header_icon"
-                        src="https://cdn.pixabay.com/photo/2018/05/08/21/28/airbnb-3384008_640.png"
+                        // src="https://cdn.pixabay.com/photo/2018/05/08/21/28/airbnb-3384008_640.png"
+                        src={process.env.PUBLIC_URL + '/logo.png'}
                         alt=""
+                        id="navbar_logo"
                     />
                 </Link>
                 <MainSearchBar />
